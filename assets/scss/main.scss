@@ -1,0 +1,11 @@
+html, body{
+	background: $body_background_color;
+}
+
+ul{
+	padding: 0;
+	margin: 0;
+	li{
+		list-style: none;
+	}
+}
