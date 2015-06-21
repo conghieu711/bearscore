@@ -1392,59 +1392,59 @@
     $( document ).ready(
         function() {
             if ( redux.rAds ) {
-                setTimeout(
-                    function() {
-                        var el;
-                        if ( $( '#redux-header' ).length > 0 ) {
-                            $( '#redux-header' ).append( '<div class="rAds"></div>' );
-                            el = $( '#redux-header' );
-                        } else {
-                            $( '#customize-info .accordion-section-title' ).append( '<div class="rAds"></div>' );
-                            el = $( '#customize-info .accordion-section-title' );
-                        }
-
-                        el.css( 'position', 'relative' );
-
-                        el.find( '.rAds' ).attr(
-                            'style',
-                            'position:absolute; top: 6px; right: 6px; display:block !important;overflow:hidden;'
-                        ).css( 'left', '-99999px' );
-                        el.find( '.rAds' ).html( redux.rAds.replace( /<br\s?\/?>/, '' ) );
-                        var rAds = el.find( '.rAds' );
-
-                        var maxHeight = el.height();
-                        var maxWidth = el.width() - el.find( '.display_header' ).width() - 30;
-
-                        rAds.find( 'a' ).css( 'float', 'right' ).css( 'line-height', el.height() + 'px' ).css(
-                            'margin-left', '5px'
-                        );
-
-                        $( document ).ajaxComplete(
-                            function() {
-                                rAds.find( 'a' ).hide();
-                                setTimeout(
-                                    function() {
-                                        $.redux.resizeAds();
-                                        rAds.find( 'a' ).fadeIn();
-                                    }, 1400
-                                );
-                                setTimeout(
-                                    function() {
-                                        $.redux.resizeAds();
-
-                                    }, 1500
-                                );
-                                $( document ).unbind( 'ajaxComplete' );
-                            }
-                        );
-
-                        $( window ).resize(
-                            function() {
-                                $.redux.resizeAds();
-                            }
-                        );
-                    }, 400
-                );
+//                setTimeout(
+//                    function() {
+//                        var el;
+//                        if ( $( '#redux-header' ).length > 0 ) {
+//                            $( '#redux-header' ).append( '<div class="rAds"></div>' );
+//                            el = $( '#redux-header' );
+//                        } else {
+//                            $( '#customize-info .accordion-section-title' ).append( '<div class="rAds"></div>' );
+//                            el = $( '#customize-info .accordion-section-title' );
+//                        }
+//
+//                        el.css( 'position', 'relative' );
+//
+//                        el.find( '.rAds' ).attr(
+//                            'style',
+//                            'position:absolute; top: 6px; right: 6px; display:block !important;overflow:hidden;'
+//                        ).css( 'left', '-99999px' );
+//                        el.find( '.rAds' ).html( redux.rAds.replace( /<br\s?\/?>/, '' ) );
+//                        var rAds = el.find( '.rAds' );
+//
+//                        var maxHeight = el.height();
+//                        var maxWidth = el.width() - el.find( '.display_header' ).width() - 30;
+//
+//                        rAds.find( 'a' ).css( 'float', 'right' ).css( 'line-height', el.height() + 'px' ).css(
+//                            'margin-left', '5px'
+//                        );
+//
+//                        $( document ).ajaxComplete(
+//                            function() {
+//                                rAds.find( 'a' ).hide();
+//                                setTimeout(
+//                                    function() {
+//                                        $.redux.resizeAds();
+//                                        rAds.find( 'a' ).fadeIn();
+//                                    }, 1400
+//                                );
+//                                setTimeout(
+//                                    function() {
+//                                        $.redux.resizeAds();
+//
+//                                    }, 1500
+//                                );
+//                                $( document ).unbind( 'ajaxComplete' );
+//                            }
+//                        );
+//
+//                        $( window ).resize(
+//                            function() {
+//                                $.redux.resizeAds();
+//                            }
+//                        );
+//                    }, 400
+//                );
 
             }
         }

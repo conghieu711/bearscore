@@ -1,5 +1,6 @@
 <?php
 
+define( 'THEMENAME', wp_get_theme() );
 define( 'TEMPLATE_DIR', get_template_directory() ); 
 define( 'TEMPLATE_URI', get_template_directory_uri() ); 
 define( 'TEMPLATE_VERSION', 'Version 1.0.0' );
@@ -8,6 +9,8 @@ define( 'TEMPLATE_VERSION', 'Version 1.0.0' );
 require_once( TEMPLATE_DIR . '/bearscore/bearscore.php' );
 $bcore = new Bearscore();
 $bcore->init();
+
+global $bears_opts;
 
 // use scss
 $scss_variable = array(

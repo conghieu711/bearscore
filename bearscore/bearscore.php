@@ -8,9 +8,12 @@ define( 'BEARSCORE_VERSION', 'Version 1.0.0' );
 
 if( ! class_exists( 'Bearscore' ) ) {
     class Bearscore {
-        var $theme_options = BEARSCORE_DIR . '/theme_options/theme_options.php';
+        var $theme_options, $opt_name;
         
         function __construct() {
+            $this->theme_options = BEARSCORE_DIR . '/theme_options/theme_options.php';
+            $this->opt_name = 'bears_opts';
+            
             $this->include_libraries();
             $this->hook_init();
             
@@ -20,6 +23,9 @@ if( ! class_exists( 'Bearscore' ) ) {
             add_image_size( 'bears-full-width', 1038, 576, true );
         }
         
+        /*
+        include_libraries
+        */
         function include_libraries() {
             // redux framework
             require_once( BEARSCORE_LIB . '/redux-framework-master/redux-framework.php' );
@@ -29,6 +35,9 @@ if( ! class_exists( 'Bearscore' ) ) {
             require_once( BEARSCORE_CLASS . '/scss.class.php' );
         }
         
+        /*
+        hook_init
+        */
         function hook_init() {
             add_action( 'wp_enqueue_scripts', array( &$this, 'register_assets' ) );
         }
@@ -69,15 +78,20 @@ if( ! class_exists( 'Bearscore' ) ) {
             isset( $theme_options ) ? $this->theme_options = $theme_options : '';
             $this->include_theme_options();
             
-            
+            if( isset( $opt_name ) )
+                $this->opt_name = $opt_name;
         }
         
-        # include themeoptions
+        /*
+        include_theme_options
+        */
         function include_theme_options() {
             require_once( $this->theme_options );
         }
 
-        # scss
+        /*
+        use_scss
+        */
         function use_scss( $parans ) {
             extract( $parans );
 

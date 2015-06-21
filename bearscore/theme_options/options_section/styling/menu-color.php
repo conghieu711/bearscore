@@ -1,0 +1,66 @@
+<?php
+Redux::setSection( $opt_name, array(
+    'title'      => __( 'Menu color', 'tb' ),
+    'id'         => 'menu-color',
+    'icon'       => 'el el-minus',
+    'desc'       => __( '', 'tb' ),
+    'subsection' => true,
+    'fields'     => array(
+        array(
+            'id'       => 'opt-menu-font-color-first-level',
+            'type'     => 'color',
+            //'output'   => array( '' ),
+            'title'    => __( 'Menu font color - first level', 'tb' ),
+            'subtitle' => __( 'Controls the text color of first level menu items.', 'tb' ),
+            'default'  => '#FFFFFF',
+        ),
+        array(
+            'id'       => 'opt-menu-font-color-hover-first-level',
+            'type'     => 'color',
+            //'output'   => array( '' ),
+            'title'    => __( 'Menu font color hover - first level', 'tb' ),
+            'subtitle' => __( 'Controls the text hover color of first level menu items.', 'tb' ),
+            'default'  => '#AECA0B',
+        ),
+        array(
+            'id'       => 'opt-menu-font-color-active-first-level',
+            'type'     => 'color',
+            //'output'   => array( '' ),
+            'title'    => __( 'Menu font color active - first level', 'tb' ),
+            'subtitle' => __( 'Controls the text active color of first level menu items.', 'tb' ),
+            'default'  => '#AECA0B',
+        ),
+        array(
+            'id'       => 'opt-menu-background-color-sub-level',
+            'type'     => 'color',
+            //'output'   => array( '' ),
+            'title'    => __( 'Menu background color - sub level', 'tb' ),
+            'subtitle' => __( 'Controls the background color of sub level menu items.', 'tb' ),
+            'default'  => '#F5F5F5',
+        ),
+        array(
+            'id'       => 'opt-menu-font-color-sub-level',
+            'type'     => 'color',
+            //'output'   => array( '' ),
+            'title'    => __( 'Menu font color - sub level', 'tb' ),
+            'subtitle' => __( 'Controls the text color of sub level menu items.', 'tb' ),
+            'default'  => '#292929',
+        ),
+        array(
+            'id'       => 'opt-menu-background-color-hover-sub-level',
+            'type'     => 'color',
+            //'output'   => array( '' ),
+            'title'    => __( 'Menu background color hover - sub level', 'tb' ),
+            'subtitle' => __( 'Controls the background hover color of sub level menu items.', 'tb' ),
+            'default'  => '#AECA0B',
+        ),
+        array(
+            'id'       => 'opt-menu-font-color-hover-sub-level',
+            'type'     => 'color',
+            //'output'   => array( '' ),
+            'title'    => __( 'Menu font color hover - sub level', 'tb' ),
+            'subtitle' => __( 'Controls the text hover color of sub level menu items.', 'tb' ),
+            'default'  => '#FFFFFF',
+        ),
+    )
+) );
