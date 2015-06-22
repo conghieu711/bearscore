@@ -169,21 +169,21 @@
 
     // ADMIN BAR LINKS -> Setup custom links in the admin bar menu as external items.
     $args['admin_bar_links'][] = array(
-        'id'    => 'redux-docs',
-        'href'  => 'http://docs.reduxframework.com/',
-        'title' => __( 'Documentation', 'redux-framework-demo' ),
+        'id'    => 'bearstheme-docs',
+        'href'  => '#',
+        'title' => __( 'Documentation', 'tb' ),
     );
 
     $args['admin_bar_links'][] = array(
         //'id'    => 'redux-support',
-        'href'  => 'https://github.com/ReduxFramework/redux-framework/issues',
-        'title' => __( 'Support', 'redux-framework-demo' ),
+        'href'  => '#',
+        'title' => __( 'Support', 'tb' ),
     );
 
     $args['admin_bar_links'][] = array(
-        'id'    => 'redux-extensions',
-        'href'  => 'reduxframework.com/extensions',
-        'title' => __( 'Extensions', 'redux-framework-demo' ),
+        'id'    => 'bearstheme-extensions',
+        'href'  => '#',
+        'title' => __( 'Extensions', 'tb' ),
     );
 
     // SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.

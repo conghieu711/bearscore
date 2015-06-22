@@ -33,13 +33,30 @@ if( ! class_exists( 'Bearscore' ) ) {
             // scssphp
             require_once( BEARSCORE_LIB . '/scssphp/scss.inc.php' );
             require_once( BEARSCORE_CLASS . '/scss.class.php' );
+            
+            // custom menu walker
+            require_once( BEARSCORE_CLASS . '/brearsCustomMenuItem.class.php' );
+            require_once( BEARSCORE_CLASS . '/brearsCustomWalker.class.php' );
         }
         
         /*
         hook_init
         */
         function hook_init() {
+            add_action( 'init', array( &$this, 'bears_register_menus' ) );
             add_action( 'wp_enqueue_scripts', array( &$this, 'register_assets' ) );
+        }
+        
+        /*
+        bears_register_menus
+        */
+        function bears_register_menus() {
+            register_nav_menus(
+                array(
+                'main-menu' => __( 'Main Menu' ),
+                'footer-menu' => __( 'Footer Menu' )
+                )
+            );
         }
         
         /*
