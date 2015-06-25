@@ -1,24 +1,24 @@
 <?php
 Redux::setSection( $opt_name, array(
-    'title'      => __( 'Footer top', 'tb' ),
+    'title'      => __( 'Footer top', THEMENAME ),
     'id'         => 'footer-top',
     'icon'       => 'el el-bookmark',
-    'desc'       => __( '', 'tb' ),
+    'desc'       => __( '', THEMENAME ),
     'subsection' => true,
     'fields'     => array(
         array(
             'id'       => 'otp-footer-top',
             'type'     => 'switch',
-            'title'    => __( 'Footer top', 'tb' ),
-            'subtitle' => __( 'enable footer top', 'tb' ),
+            'title'    => __( 'Footer top', THEMENAME ),
+            'subtitle' => __( 'enable footer top', THEMENAME ),
             'default'  => true,
         ),
         array(
             'id'       => 'opt-footer-top-background',
             'type'     => 'background',
             'output'   => array( '' ),
-            'title'    => __( 'Background', 'tb' ),
-            'subtitle' => __( 'footer background with image, color, etc.', 'tb' ),
+            'title'    => __( 'Background', THEMENAME ),
+            'subtitle' => __( 'footer background with image, color, etc.', THEMENAME ),
             'default'   => array(
                 'background-color' => '#292929'
             ),
@@ -29,9 +29,9 @@ Redux::setSection( $opt_name, array(
             'output'   => array( '' ),
             'mode'     => 'margin',
             'all'      => false,
-            'title'    => __( 'Footer margin', 'tb' ),
-            'subtitle' => __( 'top right bottom left.', 'tb' ),
-            'desc'     => __( '', 'tb' ),
+            'title'    => __( 'Footer margin', THEMENAME ),
+            'subtitle' => __( 'top right bottom left.', THEMENAME ),
+            'desc'     => __( '', THEMENAME ),
             'default'  => array(
                 'margin-top'    => '0px',
                 'margin-right'  => '0px',
@@ -45,9 +45,9 @@ Redux::setSection( $opt_name, array(
             'output'   => array( '' ),
             'mode'     => 'padding',
             'all'      => false,
-            'title'    => __( 'Footer padding', 'tb' ),
-            'subtitle' => __( 'top right bottom left.', 'tb' ),
-            'desc'     => __( '', 'tb' ),
+            'title'    => __( 'Footer padding', THEMENAME ),
+            'subtitle' => __( 'top right bottom left.', THEMENAME ),
+            'desc'     => __( '', THEMENAME ),
             'default'  => array(
                 'padding-top'    => '100px',
                 'padding-right'  => '0px',

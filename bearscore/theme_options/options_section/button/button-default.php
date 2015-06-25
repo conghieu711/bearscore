@@ -1,9 +1,9 @@
 <?php
 Redux::setSection( $opt_name, array(
-    'title'      => __( 'Button default', 'tb' ),
+    'title'      => __( 'Button default', THEMENAME ),
     'id'         => 'button-default',
     'icon'       => 'el el-minus',
-    'desc'       => __( '', 'tb' ),
+    'desc'       => __( '', THEMENAME ),
     'subsection' => true,
     'fields'     => array(
         array(
@@ -12,9 +12,9 @@ Redux::setSection( $opt_name, array(
             'output'   => array( '' ),
             'mode'     => 'padding',
             'all'      => false,
-            'title'    => __( 'Button padding', 'tb' ),
-            'subtitle' => __( 'top right bottom left.', 'tb' ),
-            'desc'     => __( '', 'tb' ),
+            'title'    => __( 'Button padding', THEMENAME ),
+            'subtitle' => __( 'top right bottom left.', THEMENAME ),
+            'desc'     => __( '', THEMENAME ),
             'default'  => array(
                 'padding-top'    => '15px',
                 'padding-right'  => '25px',
@@ -25,15 +25,15 @@ Redux::setSection( $opt_name, array(
         array(
             'id'       => 'opt-button-default-border-width',
             'type'     => 'text',
-            'title'    => 'Border width',
-            'subtitle' => 'in pixed: Ex 1px 1px 1px 1px.',
+            'title'    => __( 'Border width', THEMENAME ),
+            'subtitle' => __('in pixed: Ex 1px 1px 1px 1px.', THEMENAME),
             'default'  => '1px'
         ),
         array(
             'id'       => 'opt-button-border-radius',
             'type'     => 'text',
-            'title'    => 'Border radius',
-            'subtitle' => 'in pixed: Ex 1px 1px 1px 1px.',
+            'title'    => __('Border radius', THEMENAME),
+            'subtitle' => __('in pixed: Ex 1px 1px 1px 1px.', THEMENAME),
             'default'  => '1px'
         ),
     )

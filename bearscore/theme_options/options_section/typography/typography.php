@@ -1,15 +1,15 @@
 <?php
 Redux::setSection( $opt_name, array(
-    'title'      => __( 'Typography', 'tb' ),
+    'title'      => __( 'Typography', THEMENAME ),
     'id'         => 'typography',
     'icon'       => 'el el-text-width',
-    'desc'       => __( '', 'tb' ),
+    'desc'       => __( '', THEMENAME ),
     'fields'     => array(
         array(
             'id'            => 'opt-body-font',
             'type'          => 'typography',
-            'title'         => __( 'Body font', 'tb' ),
-            'subtitle'      => __( 'Typography option with each property can be called individually.', 'tb' ),
+            'title'         => __( 'Body font', THEMENAME ),
+            'subtitle'      => __( 'Typography option with each property can be called individually.', THEMENAME ),
             'google'        => true,
             'font-backup'   => true,
             'letter-spacing'=> true,
@@ -31,7 +31,7 @@ Redux::setSection( $opt_name, array(
         array(
             'id'            => 'opt-h1-font',
             'type'          => 'typography',
-            'title'         => __( 'H1', 'tb' ),
+            'title'         => __( 'H1', THEMENAME ),
             'google'        => true,
             'font-backup'   => true,
             'letter-spacing'=> true,
@@ -53,7 +53,7 @@ Redux::setSection( $opt_name, array(
         array(
             'id'            => 'opt-h2-font',
             'type'          => 'typography',
-            'title'         => __( 'H2', 'tb' ),
+            'title'         => __( 'H2', THEMENAME ),
             'google'        => true,
             'font-backup'   => true,
             'letter-spacing'=> true,
@@ -75,7 +75,7 @@ Redux::setSection( $opt_name, array(
         array(
             'id'            => 'opt-h3-font',
             'type'          => 'typography',
-            'title'         => __( 'H3', 'tb' ),
+            'title'         => __( 'H3', THEMENAME ),
             'google'        => true,
             'font-backup'   => true,
             'letter-spacing'=> true,
@@ -97,7 +97,7 @@ Redux::setSection( $opt_name, array(
         array(
             'id'            => 'opt-h4-font',
             'type'          => 'typography',
-            'title'         => __( 'H4', 'tb' ),
+            'title'         => __( 'H4', THEMENAME ),
             'google'        => true,
             'font-backup'   => true,
             'letter-spacing'=> true,
@@ -119,7 +119,7 @@ Redux::setSection( $opt_name, array(
         array(
             'id'            => 'opt-h5-font',
             'type'          => 'typography',
-            'title'         => __( 'H5', 'tb' ),
+            'title'         => __( 'H5', THEMENAME ),
             'google'        => true,
             'font-backup'   => true,
             'letter-spacing'=> true,
@@ -141,7 +141,7 @@ Redux::setSection( $opt_name, array(
         array(
             'id'            => 'opt-h6-font',
             'type'          => 'typography',
-            'title'         => __( 'H6', 'tb' ),
+            'title'         => __( 'H6', THEMENAME ),
             'google'        => true,
             'font-backup'   => true,
             'letter-spacing'=> true,

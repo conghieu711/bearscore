@@ -1,24 +1,24 @@
 <?php
 Redux::setSection( $opt_name, array(
-    'title'      => __( 'Footer bottom', 'tb' ),
+    'title'      => __( 'Footer bottom', THEMENAME ),
     'id'         => 'footer-bottom',
     'icon'       => 'el el-minus',
-    'desc'       => __( '', 'tb' ),
+    'desc'       => __( '', THEMENAME ),
     'subsection' => true,
     'fields'     => array(
         array(
             'id'       => 'otp-footer-bottom',
             'type'     => 'switch',
-            'title'    => __( 'Footer bottom', 'tb' ),
-            'subtitle' => __( 'enable footer bottom', 'tb' ),
+            'title'    => __( 'Footer bottom', THEMENAME ),
+            'subtitle' => __( 'enable footer bottom', THEMENAME ),
             'default'  => true,
         ),
         array(
             'id'       => 'opt-footer-bottom-background',
             'type'     => 'background',
             'output'   => array( '' ),
-            'title'    => __( 'Background', 'tb' ),
-            'subtitle' => __( 'footer background with image, color, etc.', 'tb' ),
+            'title'    => __( 'Background', THEMENAME ),
+            'subtitle' => __( 'footer background with image, color, etc.', THEMENAME ),
             'default'   => array(
                 'background-color' => '#111111'
             ),
@@ -29,8 +29,8 @@ Redux::setSection( $opt_name, array(
             'output'   => array( '' ),
             'mode'     => 'padding',
             'all'      => false,
-            'title'    => __( 'Footer padding', 'tb' ),
-            'subtitle' => __( 'top right bottom left.', 'tb' ),
+            'title'    => __( 'Footer padding', THEMENAME ),
+            'subtitle' => __( 'top right bottom left.', THEMENAME ),
             'desc'     => __( '', 'tb' ),
             'default'  => array(
                 'padding-top'    => '10px',

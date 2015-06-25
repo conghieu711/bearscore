@@ -1,16 +1,16 @@
 <?php
 Redux::setSection( $opt_name, array(
-    'title'      => __( 'Page title & Bc', 'tb' ),
+    'title'      => __( 'Page title & Bc', THEMENAME ),
     'id'         => 'pagetitle_breadcumb',
     'icon'       => 'el el-credit-card',
-    'desc'       => __( '', 'tb' ),
+    'desc'       => __( '', THEMENAME ),
     'fields'     => array(
         array(
             'id'       => 'opt-pagetitle-breadcumb-layout',
             'type'     => 'image_select',
-            'title'    => __( 'Layout', 'tb' ),
-            'subtitle' => __( 'Select a layout for page title', 'tb' ),
-            'desc'     => __( '', 'tb' ),
+            'title'    => __( 'Layout', THEMENAME ),
+            'subtitle' => __( 'Select a layout for page title', THEMENAME ),
+            'desc'     => __( '', THEMENAME ),
             'options'  => array(
                 'default' => array(
                     'alt' => 'page title default',
@@ -27,8 +27,8 @@ Redux::setSection( $opt_name, array(
             'id'       => 'opt-pagetitle-breadcumd-background',
             'type'     => 'background',
             'output'   => array( '.tb-pagetitle-breadcumd-wrap' ),
-            'title'    => __( 'Background', 'tb' ),
-            'subtitle' => __( 'Page title background with image, color, etc.', 'tb' ),
+            'title'    => __( 'Background', THEMENAME ),
+            'subtitle' => __( 'Page title background with image, color, etc.', THEMENAME ),
             'default'   => array(
                 'background-color' => '#292929'
             ),
@@ -39,9 +39,9 @@ Redux::setSection( $opt_name, array(
             'output'   => array( '' ),
             'mode'     => 'margin',
             'all'      => false,
-            'title'    => __( 'Margin', 'tb' ),
-            'subtitle' => __( 'top right bottom left.', 'tb' ),
-            'desc'     => __( '', 'tb' ),
+            'title'    => __( 'Margin', THEMENAME ),
+            'subtitle' => __( 'top right bottom left.', THEMENAME ),
+            'desc'     => __( '', THEMENAME ),
             'default'  => array(
                 'margin-top'    => '0px',
                 'margin-right'  => '0px',
@@ -55,9 +55,9 @@ Redux::setSection( $opt_name, array(
             'output'   => array( '' ),
             'mode'     => 'padding',
             'all'      => false,
-            'title'    => __( 'Padding', 'tb' ),
-            'subtitle' => __( 'top right bottom left.', 'tb' ),
-            'desc'     => __( '', 'tb' ),
+            'title'    => __( 'Padding', THEMENAME ),
+            'subtitle' => __( 'top right bottom left.', THEMENAME ),
+            'desc'     => __( '', THEMENAME ),
             'default'  => array(
                 'padding-top'    => '100px',
                 'padding-right'  => '0px',

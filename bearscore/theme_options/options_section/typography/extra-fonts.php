@@ -1,16 +1,16 @@
 <?php
 Redux::setSection( $opt_name, array(
-    'title'      => __( 'Extra fonts', 'tb' ),
+    'title'      => __( 'Extra fonts', THEMENAME ),
     'id'         => 'extra-fonts',
     'icon'       => 'el el-fontsize',
-    'desc'       => __( '', 'tb' ),
+    'desc'       => __( '', THEMENAME ),
     'subsection' => true,
     'fields'     => array(
         array(
             'id'            => 'opt-extra-font-one',
             'type'          => 'typography',
-            'title'         => __( 'Font 1', 'tb' ),
-            'subtitle'      => __( '', 'tb' ),
+            'title'         => __( 'Font 1', THEMENAME ),
+            'subtitle'      => __( '', THEMENAME ),
             'google'        => true,
             'font-backup'   => true,
             'letter-spacing'=> true,
@@ -32,14 +32,14 @@ Redux::setSection( $opt_name, array(
         array(
             'id'            => 'opt-selector-font-one',
             'type'          => 'textarea',
-            'title'         => __( 'Selector 1', 'tb' ),
-            'subtitle'      => __( 'add html tags ID or class (body,a,.class,#id)', 'tb' ),
+            'title'         => __( 'Selector 1', THEMENAME ),
+            'subtitle'      => __( 'add html tags ID or class (body,a,.class,#id)', THEMENAME ),
         ),
         array(
             'id'            => 'opt-extra-font-two',
             'type'          => 'typography',
-            'title'         => __( 'Font 2', 'tb' ),
-            'subtitle'      => __( '', 'tb' ),
+            'title'         => __( 'Font 2', THEMENAME ),
+            'subtitle'      => __( '', THEMENAME ),
             'google'        => true,
             'font-backup'   => true,
             'letter-spacing'=> true,
@@ -61,8 +61,8 @@ Redux::setSection( $opt_name, array(
         array(
             'id'            => 'opt-selector-font-two',
             'type'          => 'textarea',
-            'title'         => __( 'Selector 2', 'tb' ),
-            'subtitle'      => __( 'add html tags ID or class (body,a,.class,#id)', 'tb' ),
+            'title'         => __( 'Selector 2', THEMENAME ),
+            'subtitle'      => __( 'add html tags ID or class (body,a,.class,#id)', THEMENAME ),
         )
     )
 ) );

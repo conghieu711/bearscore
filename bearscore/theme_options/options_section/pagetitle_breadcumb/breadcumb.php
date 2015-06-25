@@ -1,16 +1,16 @@
 <?php
 Redux::setSection( $opt_name, array(
-    'title'      => __( 'Breadcumb', 'tb' ),
+    'title'      => __( 'Breadcumb', THEMENAME ),
     'id'         => 'breadcumb',
     'icon'       => 'el el-random',
-    'desc'       => __( '', 'tb' ),
+    'desc'       => __( '', THEMENAME ),
     'subsection' => true,
     'fields'     => array(
         array(
             'id'            => 'opt-breadcumd-typography',
             'type'          => 'typography',
-            'title'         => __( 'Typography', 'tb' ),
-            'subtitle'      => __( 'Typography option with breadcumb text.', 'tb' ),
+            'title'         => __( 'Typography', THEMENAME ),
+            'subtitle'      => __( 'Typography option with breadcumb text.', THEMENAME ),
             'google'        => true,
             'font-backup'   => true,
             'letter-spacing'=> true,

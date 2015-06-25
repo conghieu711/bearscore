@@ -171,19 +171,19 @@
     $args['admin_bar_links'][] = array(
         'id'    => 'bearstheme-docs',
         'href'  => '#',
-        'title' => __( 'Documentation', 'tb' ),
+        'title' => __( 'Documentation', THEMENAME ),
     );
 
     $args['admin_bar_links'][] = array(
         //'id'    => 'redux-support',
         'href'  => '#',
-        'title' => __( 'Support', 'tb' ),
+        'title' => __( 'Support', THEMENAME ),
     );
 
     $args['admin_bar_links'][] = array(
         'id'    => 'bearstheme-extensions',
         'href'  => '#',
-        'title' => __( 'Extensions', 'tb' ),
+        'title' => __( 'Extensions', THEMENAME ),
     );
 
     // SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.
@@ -216,13 +216,13 @@
         } else {
             $v = str_replace( '-', '_', $args['opt_name'] );
         }
-        $args['intro_text'] = sprintf( __( ' ', 'tb' ) );
+        $args['intro_text'] = sprintf( __( ' ', THEMENAME ) );
     } else {
-        $args['intro_text'] = __( '<p>This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.</p>', 'tb' );
+        $args['intro_text'] = __( '<p>This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.</p>', THEMENAME );
     }
 
     // Add content after the form.
-    $args['footer_text'] = __( '<p>Thank you! :)</p>', 'tb' );
+    $args['footer_text'] = __( '<p>Thank you! :)</p>', THEMENAME );
 
     Redux::setArgs( $opt_name, $args );
 

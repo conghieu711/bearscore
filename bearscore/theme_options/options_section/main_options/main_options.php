@@ -1,6 +1,6 @@
 <?php
 $option_info = "<center><div style='width: 80%; padding-bottom: 20px;'>
-<h2>BEARS theme</h2>
+<h2 style='font-size: 32px;'>BEARS theme</h2>
 <div style='padding: 20px 0;'>
     <a style='display: inline-block; margin-right: 40px' href=''>
         <img src='". BEARSCORE_URI .'/assets/images/version-img.png' ."'>
@@ -21,9 +21,18 @@ $option_info = "<center><div style='width: 80%; padding-bottom: 20px;'>
 </div></center>";
 
 Redux::setSection( $opt_name, array(
-    'title'     => __( 'Main Options', 'bt' ),
+    'title'     => __( 'Main Options', THEMENAME ),
     'id'        => 'main_options',
-    'desc'      => __( '', 'tb' ),
+    'desc'      => __( '', THEMENAME ),
     'icon'      => 'el el-dashboard',
-    'desc'      => $option_info,
+    //'desc'      => $option_info,
+    'fields'    => array(
+        array(
+            'id'    => 'opt-info-theme',
+            'type'  => 'raw',
+            'title' => __('', THEMENAME),
+            'full_width' => true,
+            'content'   => $option_info
+            )
+        )
 ) );

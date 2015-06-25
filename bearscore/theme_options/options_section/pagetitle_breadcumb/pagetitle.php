@@ -1,16 +1,16 @@
 <?php
 Redux::setSection( $opt_name, array(
-    'title'      => __( 'Page title', 'tb' ),
+    'title'      => __( 'Page title', THEMENAME ),
     'id'         => 'pagetitle',
     'icon'       => 'el el-minus',
-    'desc'       => __( '', 'tb' ),
+    'desc'       => __( '', THEMENAME ),
     'subsection' => true,
     'fields'     => array(
         array(
             'id'            => 'opt-page-title-typography',
             'type'          => 'typography',
-            'title'         => __( 'Typography', 'tb' ),
-            'subtitle'      => __( 'Typography option with title text.', 'tb' ),
+            'title'         => __( 'Typography', THEMENAME ),
+            'subtitle'      => __( 'Typography option with title text.', THEMENAME ),
             'google'        => true,
             'font-backup'   => true,
             'letter-spacing'=> true,

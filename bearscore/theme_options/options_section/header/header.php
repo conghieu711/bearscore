@@ -1,20 +1,20 @@
 <?php
 Redux::setSection( $opt_name, array(
-    'title'      => __( 'Header', 'tb' ),
+    'title'      => __( 'Header', THEMENAME ),
     'id'         => 'header',
     'icon'       => 'el el-credit-card',
-    'desc'       => __( '', 'tb' ),
+    'desc'       => __( '', THEMENAME ),
     'fields'     => array(
         array(
             'id'       => 'opt-header-layout',
             'type'     => 'image_select',
-            'title'    => __( 'Layout', 'tb' ),
-            'subtitle' => __( 'Select header layout.', 'tb' ),
-            'desc'     => __( '', 'tb' ),
+            'title'    => __( 'Layout', THEMENAME ),
+            'subtitle' => __( 'Select header layout.', THEMENAME ),
+            'desc'     => __( '', THEMENAME ),
             //Must provide key => value(array:title|img) pairs for radio options
             'options'  => array(
                 'default' => array(
-                    'alt' => 'header default',
+                    'alt' => __('header default', THEMENAME),
                     'img' => BEARSCORE_URI . '/assets/images/header-layout-default.jpg'
                 ),
             ),
@@ -23,9 +23,9 @@ Redux::setSection( $opt_name, array(
         array(
             'id'        => 'opt-header-height',
             'type'      => 'text',
-            'title'     => __( 'Header height', 'tb' ),
-            'subtitle'  => __( 'in pixels.', 'tb' ),
-            'desc'      => __( '', 'tb' ),
+            'title'     => __( 'Header height', THEMENAME ),
+            'subtitle'  => __( 'in pixels.', THEMENAME ),
+            'desc'      => __( '', THEMENAME ),
             'default'   => '100px'
         ),
         array(
@@ -34,9 +34,9 @@ Redux::setSection( $opt_name, array(
             'output'   => array( '' ),
             'mode'     => 'padding',
             'all'      => false,
-            'title'    => __( 'Hader padding', 'tb' ),
-            'subtitle' => __( 'in pixels, top right bottom left.', 'tb' ),
-            'desc'     => __( '', 'tb' ),
+            'title'    => __( 'Hader padding', THEMENAME ),
+            'subtitle' => __( 'in pixels, top right bottom left.', THEMENAME ),
+            'desc'     => __( '', THEMENAME ),
             'default'  => array(
                 'padding-top'    => '0px',
                 'padding-right'  => '0px',
@@ -47,14 +47,14 @@ Redux::setSection( $opt_name, array(
         array(
             'id'       => 'otp-header-sticky',
             'type'     => 'switch',
-            'title'    => __( 'Sticky header', 'tb' ),
-            'subtitle' => __( 'enable sticky mode for menu', 'tb' ),
+            'title'    => __( 'Sticky header', THEMENAME ),
+            'subtitle' => __( 'enable sticky mode for menu', THEMENAME ),
             'default'  => true,
         ),
         array(
             'id'        => 'opt-sticky-header-height',
             'type'      => 'text',
-            'title'     => __( 'Sticky header height', 'tb' ),
+            'title'     => __( 'Sticky header height', THEMENAME ),
             'subtitle'  => __( 'in pixels.', 'tb' ),
             'desc'      => __( '', 'tb' ),
             'default'   => '80px'
